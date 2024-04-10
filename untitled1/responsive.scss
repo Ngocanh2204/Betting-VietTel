@@ -25,7 +25,7 @@ $height-banner-mobile: 24vh;
   }
   .backgroundFull {
     .body {
-      margin-top: 50px;
+      margin-top: 40px;
       gap: 20px;
       .section-banner {
         height: $height-banner-mobile;
@@ -413,11 +413,17 @@ $height-banner-mobile: 24vh;
 }
 
 @media (max-width: 768px){
+
   .backgroundFull {
     .body {
-      margin-top: 50px;
+      margin-top: 40px;
       gap: 20px;
-
+      padding: 0 0 65px 0;
+      .section-top{
+        .bet-slip{
+          display: none;
+        }
+      }
       .section-banner {
         height: $height-banner-mobile;
 
@@ -455,6 +461,7 @@ $height-banner-mobile: 24vh;
   }
 
   .login-form{
+    margin-top: 10px;
     .login-row{
       .img{
        display: none;

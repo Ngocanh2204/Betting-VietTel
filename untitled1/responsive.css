@@ -14,7 +14,7 @@
     display: block;
   }
   .backgroundFull .body {
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 20px;
   }
   .backgroundFull .body .section-banner {
@@ -325,8 +325,12 @@
 }
 @media (max-width: 768px) {
   .backgroundFull .body {
-    margin-top: 50px;
+    margin-top: 40px;
     gap: 20px;
+    padding: 0 0 65px 0;
+  }
+  .backgroundFull .body .section-top .bet-slip {
+    display: none;
   }
   .backgroundFull .body .section-banner {
     height: 24vh;
@@ -354,6 +358,9 @@
   }
   .footer-mobile {
     display: block;
+  }
+  .login-form {
+    margin-top: 10px;
   }
   .login-form .login-row .img {
     display: none;

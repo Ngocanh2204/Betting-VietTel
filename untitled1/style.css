@@ -94,6 +94,12 @@ a {
 .header-mobile-left {
   align-items: center;
 }
+.header-mobile-left a i {
+  color: rgb(255, 255, 255);
+  margin: 10px;
+  font-size: 18px;
+  opacity: 0.7;
+}
 .header-mobile-left i {
   padding-right: 10px;
   font-size: 24px;
@@ -104,6 +110,14 @@ a {
 }
 .header-mobile-left .logo a img {
   width: 100%;
+}
+.header-mobile-left .mobile-menu li {
+  list-style-type: none;
+  line-height: 30px;
+}
+.header-mobile-left .mobile-menu li a {
+  line-height: 1;
+  color: white;
 }
 .header-mobile-right {
   gap: 10px;
@@ -139,6 +153,7 @@ a {
   align-items: center;
 }
 .backgroundFull .body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -513,29 +528,40 @@ a {
 .backgroundFull .body .section-top .bet-slip-body .nav-item button.active {
   border-color: rgb(255, 190, 26);
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header {
-  justify-content: space-between;
+.backgroundFull .body .section-top .bet-slip-body .tab-content {
   padding: 8px;
+  background: var(--Neutral-Black, rgb(4, 15, 28));
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header .left {
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results {
+  justify-content: space-between;
+}
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results .left {
   align-items: center;
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header .left img {
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results .left img {
   width: 28px;
   height: 28px;
   margin-right: 5px;
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header .left .name .proesional {
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results .left .name .proesional {
   color: var(--Color-Text-03, rgb(119, 126, 144));
   font-size: 16px;
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header .left .name .qty {
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results .left .name .qty {
   font-size: 16px;
   color: var(--Color-Text-01, rgb(248, 248, 251));
 }
-.backgroundFull .body .section-top .bet-slip-body .tab-content .header .right i {
+.backgroundFull .body .section-top .bet-slip-body .tab-content .results .right i {
   color: var(--Neutral-Primary-02, rgb(119, 126, 144));
   font-size: 24px;
+}
+.backgroundFull .body .section-top .bet-slip-body .tab-content .pays-left .odd, .backgroundFull .body .section-top .bet-slip-body .tab-content .pays-right .odd {
+  font-size: 12px;
+  color: var(--Color-Text-01, rgb(248, 248, 251));
+}
+.backgroundFull .body .section-top .bet-slip-body .tab-content .pays-left .qty, .backgroundFull .body .section-top .bet-slip-body .tab-content .pays-right .qty {
+  font-size: 16px;
+  color: var(--Color-Text-01, rgb(248, 248, 251));
 }
 .backgroundFull .body .section-hot {
   display: flex;
@@ -916,10 +942,9 @@ a {
   color: rgb(145, 150, 165);
 }
 .footer-desktop .footer-pay {
-  max-height: 36px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .footer-desktop .footer-pay-left a {
   color: rgb(145, 150, 165);
@@ -927,6 +952,12 @@ a {
 .footer-desktop .footer-pay-right img {
   height: 100%;
   width: auto;
+}
+.footer-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .footer-mobile .style {
   display: flex;
@@ -959,7 +990,7 @@ a {
   left: -250px;
   width: 250px;
   height: 100vh;
-  background-color: #333;
+  background-color: rgb(6, 22, 40);
   padding: 20px;
   transition: all 0.5s ease-in-out;
 }
