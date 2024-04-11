@@ -1,14 +1,23 @@
-//Xử lí sự kiện khi chọn option language
-var dropdownItems = document.querySelectorAll('.dropdown-item');
-dropdownItems.forEach(function(item) {
-    item.addEventListener('click', function (e) {
-        var selectedLanguage = this.textContent.trim().substr(0, 3); // Lấy nội dung của option đã chọn và chỉ lấy 3 ký tự đầu
-        var dropdownToggle = this.closest('.dropdown').querySelector('.dropdown-toggle');
-        var iconHTML = this.querySelector('i').outerHTML; // Lấy HTML của thẻ i
-        dropdownToggle.innerHTML = iconHTML + selectedLanguage; // Cập nhật nội dung của dropdown-toggle
-    });
-});
+function decreasePrice() {
+    var priceInput = document.getElementById("price");
+    var currentPrice = parseFloat(priceInput.value);
+    var newPrice = currentPrice - 1;
+    if (newPrice < 0) {
+        newPrice = 0;
+    }
+    if (newPrice % 1 === 0) {
+        priceInput.value = newPrice.toFixed(0);
+    } else {
+        priceInput.value = newPrice.toFixed(2);
+    }
+}
 
+function increasePrice() {
+    var priceInput = document.getElementById("price");
+    var currentPrice = parseFloat(priceInput.value);
+    var newPrice = currentPrice + 1; // Tăng giá 10 đơn vị, bạn có thể thay đổi giá trị này
+    priceInput.value = newPrice.toFixed(2); // Giữ chỉ hai số sau dấu thập phân
+}
 //swiper
 new Swiper(".mySwiper", {
     pagination: {
@@ -28,17 +37,17 @@ new Swiper(".entertainmentSwiper", {
 new Swiper(".mySwiper1", {
     freeMode: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
     },
     breakpoints: {
-        // Thiết lập cho màn hình nhỏ hơn hoặc bằng 768px
-        768: {
+        // Thiết lập cho màn hình nhỏ hơn 768px
+        300: {
             slidesPerView: 1.5,
             spaceBetween: 20,
         },
-        // Thiết lập cho màn hình nhỏ hơn hoặc bằng 992px
-        992: {
+        // Thiết lập cho màn hình từ 768px trở lên
+        768: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
@@ -52,4 +61,11 @@ function menuMobile() {
 function closeMobile() {
     document.getElementById("mobileMenu").classList.remove('active');
     document.getElementsByClassName("opacity_menu")[0].classList.remove('active');
+}
+
+function calculateTotal() {
+    var quantity = parseFloat(document.getElementById('quantity').value);
+    var price = parseFloat(document.getElementById('price').value);
+    var total = quantity * price;
+    document.getElementById('total').value = total.toFixed(2); // Giữ 2 chữ số thập phân
 }

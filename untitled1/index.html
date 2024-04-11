@@ -87,6 +87,11 @@
                     <div class="header-mobile-right d-flex">
                         <div class="notification">
                             <i class="fa-regular fa-bell"></i>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
+                                  <circle cx="3.5" cy="3.5" r="3.5" fill="#F14B51"/>
+                                </svg>
+                            </span>
                         </div>
                         <div class="join">
                             <a href="">join</a>
@@ -456,8 +461,18 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
+                                    <div class="button-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 25" fill="none">
+                                            <path d="M14.43 6.42993L20.5 12.4999L14.43 18.5699" stroke="#F8F8FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.5 12.5H20.33" stroke="#F8F8FB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="button-prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                            <path d="M6.71332 4.62L2.66666 8.66666L6.71332 12.7133" stroke="#F8F8FB" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 8.66666H2.78" stroke="#F8F8FB" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
                                 </div>
                                 <div class="frame-parent1">
                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -1221,75 +1236,87 @@
                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
                     </div>
-                    <div class="bet-slip col-md-3">
-                        <div class="bet-slip-header">
-                            <div class="shop">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span>BET SLIP</span>
-                                <div class="qty">
-                                    1
-                                </div>
-                            </div>
-                            <div class="delete">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </div>
-                        <div class="bet-slip-body">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="bet-slip" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">SINGLES </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="bet-slip1" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">MULTIPLE </button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="bet-slip">
-                                    <div class="results d-flex">
-                                        <div class="left d-flex">
-                                            <img src="images/dribbble.png" alt="">
-                                            <div class="name">
-                                                <div class="proesional">Argentina Liga Proesional</div>
-                                                <div class="qty">Match results: 1</div>
-                                            </div>
-                                        </div>
-                                        <div class="right">
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                        </div>
-                                    </div>
-                                    <div class="pays d-flex">
-                                        <div class="pays-left">
-                                            <div class="odd">
-                                                Odds
-                                                <div class="qty">
-                                                    6.80
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pays-center">
+<!--                    <div class="bet-slip col-md-3">-->
+<!--                        <div class="bet-slip-header">-->
+<!--                            <div class="shop">-->
+<!--                                <i class="fa-solid fa-cart-shopping"></i>-->
+<!--                                <span>BET SLIP</span>-->
+<!--                                <div class="qty">-->
+<!--                                    1-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="delete">-->
+<!--                                <i class="fa-solid fa-trash"></i>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="bet-slip-body">-->
+<!--                            <ul class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--                                <li class="nav-item" role="presentation">-->
+<!--                                    <button class="nav-link active" id="bet-slip" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">SINGLES </button>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item" role="presentation">-->
+<!--                                    <button class="nav-link" id="bet-slip1" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">MULTIPLE </button>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                            <div class="tab-content" id="myTabContent">-->
+<!--                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="bet-slip">-->
+<!--                                    <div class="results d-flex">-->
+<!--                                        <div class="left d-flex">-->
+<!--                                            <img src="images/dribbble.png" alt="">-->
+<!--                                            <div class="name">-->
+<!--                                                <div class="proesional">Argentina Liga Proesional</div>-->
+<!--                                                <div class="qty">Match results: 1</div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="right">-->
+<!--                                            <i class="fa-solid fa-circle-xmark"></i>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="pays d-flex">-->
+<!--                                        <div class="pays-left">-->
+<!--                                            <div class="odd">-->
+<!--                                                Odds-->
+<!--                                                <div class="qty">-->
+<!--                                                    6.80-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="pays-right d-flex">-->
+<!--                                            <div class="price-input-wrapper">-->
+<!--                                                <button onclick="decreasePrice()"><i class="fa-solid fa-minus"></i></button>-->
+<!--                                                <input type="number" id="price" value="1">-->
+<!--                                                <button onclick="increasePrice()"><i class="fa-solid fa-plus"></i></button>-->
+<!--                                            </div>-->
+<!--                                            <div class="pays-left">-->
+<!--                                                <div class="odd">-->
+<!--                                                    Payout-->
+<!--                                                    <div class="qty">-->
+<!--                                                        6.80-->
+<!--                                                        <div class="htg">-->
+<!--                                                            HTG-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="bottom">-->
+<!--                                        <div class="total">10</div>-->
+<!--                                        <div class="total">20</div>-->
+<!--                                        <div class="total">30</div>-->
+<!--                                        <div class="total">40</div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="bet-slip1">...</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="bet-slip-cash">-->
 
-                                        </div>
-                                        <div class="pays-right">
+<!--                        </div>-->
+<!--                        <div class="bet-slip-footer">-->
 
-                                        </div>
-                                    </div>
-                                    <div class="bottom row">
-                                        <div class="col-md-3">10</div>
-                                        <div class="col-md-3">20</div>
-                                        <div class="col-md-3">30</div>
-                                        <div class="col-md-3">40</div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="bet-slip1">...</div>
-                            </div>
-                        </div>
-                        <div class="bet-slip-cash">
-
-                        </div>
-                        <div class="bet-slip-footer">
-
-                        </div>
-                    </div>
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </section>
             <section class="section-hot section-hot--block row">
