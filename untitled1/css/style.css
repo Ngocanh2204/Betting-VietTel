@@ -195,25 +195,9 @@ a {
   width: 100%;
   object-fit: cover;
 }
-.backgroundFull .body .section-banner .banner-icon {
-  position: relative;
-}
-.backgroundFull .body .section-banner .banner-icon .list-item {
-  position: absolute;
-  top: 11px;
-  left: 15px;
-}
-.backgroundFull .body .section-banner .banner-icon .list-item .item {
-  padding: 10px;
-  position: relative;
-}
-.backgroundFull .body .section-banner .banner-icon .list-item .item svg {
-  position: absolute;
-  left: 0px;
-  bottom: -15px;
-}
 .backgroundFull .body .section-top {
   padding: 12px;
+  position: relative;
 }
 .backgroundFull .body .section-top--left {
   background: rgb(6, 22, 40);
@@ -240,24 +224,28 @@ a {
   background: rgb(255, 190, 26);
 }
 .backgroundFull .body .section-top--right .top-match .header-top {
+  margin-bottom: 20px;
   justify-content: space-between;
 }
 .backgroundFull .body .section-top--right .top-match .header-top .name {
   color: white;
   font-size: 26px;
   font-weight: 600;
+  width: 30%;
   background: linear-gradient(87.32deg, #040F1C 0%, #061628 86.15%);
+  padding: 10px;
+  border-top-right-radius: 35px;
+  margin: 0;
 }
 .backgroundFull .body .section-top--right .top-match .header-top .more {
   border-radius: 100px;
   font-size: 14px;
   font-weight: 600;
   background: linear-gradient(0deg, #F67D24 0%, #FF9900 33.33%, #FF9A01 66.67%, #FFCF2C 100%);
-  padding: 12px 32px;
+  padding: 16px 32px;
   color: white;
 }
 .backgroundFull .body .section-top--right .top-match .form-top {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -490,6 +478,27 @@ a {
   font-size: 24px;
   color: rgb(230, 232, 236);
 }
+.backgroundFull .body .section-top--right .top-match .even-item {
+  margin-top: 30px;
+}
+.backgroundFull .body .section-top--right .top-match .even-item--img {
+  width: 100%;
+  height: 47vh;
+}
+.backgroundFull .body .section-top--right .top-match .even-item--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.backgroundFull .body .section-top--right .top-match .even-item--name {
+  text-align: center;
+  font-family: Montserrat;
+  margin-top: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
 .backgroundFull .body .section-top .bet-slip {
   border-radius: 16px;
   background: rgb(6, 22, 40);
@@ -626,6 +635,94 @@ a {
   color: white;
   font-size: 16px;
   padding: 2px 23px;
+}
+.backgroundFull .body .section-top .absolute-icon {
+  position: absolute;
+  right: -60px;
+  top: 0;
+}
+.backgroundFull .body .section-top .absolute-icon .banner-icon {
+  position: relative;
+}
+.backgroundFull .body .section-top .absolute-icon .banner-icon .list-item {
+  position: absolute;
+  top: 11px;
+  left: 4px;
+}
+.backgroundFull .body .section-top .absolute-icon .banner-icon .list-item .item {
+  padding: 10px;
+  position: relative;
+}
+.backgroundFull .body .section-top .absolute-icon .banner-icon .list-item .item svg {
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+}
+.backgroundFull .body .section-estar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backgroundFull .body .section-estar .title {
+  background: -webkit-linear-gradient(0deg, #F67D24 0%, #FF9900 33.33%, #FF9A01 66.67%, #FFCF2C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 24px;
+  font-weight: 700;
+}
+.backgroundFull .body .section-estar .title span {
+  margin-left: 6px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.backgroundFull .body .section-estar hr {
+  color: rgb(246, 125, 36);
+  opacity: 1;
+  width: 35%;
+}
+.backgroundFull .body .section-estar .estar-list {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.backgroundFull .body .section-estar .estar-list .estar-item {
+  width: 21.25%;
+  height: 25vh;
+  transform: skew(-15deg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.backgroundFull .body .section-estar .estar-list .estar-item:first-child a, .backgroundFull .body .section-estar .estar-list .estar-item:last-child a {
+  transform: translate(-50%, -50%) skew(0deg);
+}
+.backgroundFull .body .section-estar .estar-list .estar-item:first-child {
+  transform-origin: top right;
+  transform: skew(0deg);
+  right: -25px;
+}
+.backgroundFull .body .section-estar .estar-list .estar-item:last-child {
+  width: 15%;
+  transform-origin: bottom right;
+  transform: skew(0deg);
+  left: -25px;
+  z-index: 0;
+}
+.backgroundFull .body .section-estar .estar-list .estar-item a {
+  padding: 10px 0;
+  width: 80%;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(15deg);
+  color: white;
+  text-align: center;
+  background: linear-gradient(0deg, #F67D24 0%, #FF9900 33.33%, #FF9A01 66.67%, #FFCF2C 100%);
+  font-size: 12px;
 }
 .backgroundFull .body .section-hot {
   display: flex;
@@ -977,7 +1074,7 @@ a {
   color: white;
   border-radius: 4px;
   background: linear-gradient(357.58deg, #F67D24 2.02%, #FF9900 34.01%, #FF9A01 65.99%, #FFCF2C 97.98%);
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 .footer-desktop .contact-link .phone i {
   margin-right: 5px;
