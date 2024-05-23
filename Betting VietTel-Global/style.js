@@ -54,13 +54,13 @@ new Swiper(".mySwiper1", {
     }
 });
 
-function menuMobile() {
+function menu() {
     document.getElementById("mobileMenu").classList.add('active');
-    document.getElementsByClassName("opacity_menu")[0].classList.add('active');
+    document.getElementsByClassName("close_menu")[0].classList.add('active');
 }
-function closeMobile() {
+function closeMenu() {
     document.getElementById("mobileMenu").classList.remove('active');
-    document.getElementsByClassName("opacity_menu")[0].classList.remove('active');
+    document.getElementsByClassName("close_menu")[0].classList.remove('active');
 }
 
 function calculateTotal() {

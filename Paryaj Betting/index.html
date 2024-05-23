@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- MDBootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700&family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@100&family=Nunito+Sans:wght@400;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="header container">
+            <div class="header-right d-flex justify-content-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="p-0 header-left d-flex justify-content-center">
+                <div class="position">
+                    <button onclick="menu()"><i class="fa-solid fa-bars"></i></button>
+                    <div id="menu" class="menu">
+                        <div class="list">
+                            <div class="menu-header"></div>
+                            <div class="menu-body">
+                                <a class="item" href="">Khuyến mãi</a>
+                                <a class="item" href="">Hoa hồng của tôi</a>
+                                <a class="item" href="">Gửi tiền nhanh</a>
+                                <a class="item" href="">Rút tiền trực tuyến</a>
+                                <a class="item" href="">Đại lí</a>
+                                <a class="item" href="">Địa chỉ tải xuống ứng dụng</a>
+                                <a class="item" href="">CSKH</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="closeMenu()" class="close_menu"></div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <section class="banner">
+                <img src="images/banner.png" alt="">
+            </section>
+            <section class="news d-flex container">
+                <a href="">Tin mới</a>
+                <span class="news-content"> Nhận thưởng tiền mặt lên tới 50.000.000</span>
+            </section>
+            <section class="container">
+                <div class="function row">
+                    <div class="function-login col-3">
+                        <a href="">Đăng nhập</a>
+                    </div>
+                    <div class="function-signIn col-3">
+                        <a href="">Đăng ký</a>
+                    </div>
+                    <div class="function-recharge col-2">
+                        <div class="recharge">
+                            <a href="">
+                                <div class="img">
+                                    <img src="images/icon/recharge.png" alt="">
+                                </div>
+                                <div class="content">
+                                    Nạp tiền
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="function-withdrawMoney col-2">
+                        <div class="recharge">
+                            <a href="">
+                                <div class="img">
+                                    <img src="images/icon/withdrawMoney.png" alt="">
+                                </div>
+                                <div class="content">
+                                    Rút tiền
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="function-reward col-2">
+                        <div class="recharge">
+                            <a href="">
+                                <div class="img">
+                                    <img src="images/icon/reward.png" alt="">
+                                </div>
+                                <div class="content">
+                                    Thưởng
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="suggest container">
+                <div class="suggest-name">
+                    <a class="hot" href="">hot</a>
+                    <a class="play-regularly" href="">
+                        Chơi thường xuyên
+                    </a>
+                    <a class="play-regularly" href="">
+                        Được đề xuất
+                    </a>
+                </div>
+                <div class="suggest-list row">
+                    <div class="item col-3">
+                        <a href="">
+                            <div class="img">
+                                <img src="images/suggest/saba.png" alt="">
+                            </div>
+                            <div class="name">
+                                SABA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-3">
+                        <a href="">
+                            <div class="img">
+                                <img src="images/suggest/awc.png" alt="">
+                            </div>
+                            <div class="name">
+                                awc AEEEEEE
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-3">
+                        <a href="">
+                            <div class="img">
+                                <img src="images/suggest/dg.png" alt="">
+                            </div>
+                            <div class="name">
+                                DG LOOOO
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item col-3">
+                        <a href="">
+                            <div class="img">
+                                <img src="images/suggest/fish.png" alt="">
+                            </div>
+                            <div class="name">
+                                Bắn cá
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="categories container">
+                <div class="row g-0">
+                    <ul class="categories-name nav nav-tabs col-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab" aria-controls="game" aria-selected="true">
+                                <div class="img">
+                                    <img src="images/categories/game.png" alt="">
+                                </div>
+                                <span class="name">trò chơi</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fish-tab" data-bs-toggle="tab" data-bs-target="#fish" type="button" role="tab" aria-controls="fish" aria-selected="false">
+                                <div class="img">
+                                    <img class="abc" src="images/categories/fish.png" alt="">
+                                    <div class="color-overlay"></div>
+                                </div>
+                                <span class="name">bắn cá</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="casino-tab" data-bs-toggle="tab" data-bs-target="#casino" type="button" role="tab" aria-controls="casino" aria-selected="false">
+                                <div class="img">
+                                    <img src="images/categories/casino.png" alt="">
+                                </div>
+                                <span class="name">casino</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="card_game-tab" data-bs-toggle="tab" data-bs-target="#card_game" type="button" role="tab" aria-controls="card_game" aria-selected="false">
+                                <div class="img">
+                                    <img src="images/categories/card_game.png" alt="">
+                                </div>
+                                <span class="name">game bài</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sport-tab" data-bs-toggle="tab" data-bs-target="#sport" type="button" role="tab" aria-controls="sport" aria-selected="false">
+                                <div class="img">
+                                    <img src="images/categories/sport.png" alt="">
+                                </div>
+                                <span class="name">thể thao</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lottery-tab" data-bs-toggle="tab" data-bs-target="#lottery" type="button" role="tab" aria-controls="lottery" aria-selected="false">
+                                <div class="img">
+                                    <img src="images/categories/lottery.png" alt="">
+                                </div>
+                                <span class="name">xổ số</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="chicken-tab" data-bs-toggle="tab" data-bs-target="#chicken" type="button" role="tab" aria-controls="chicken" aria-selected="false">
+                                <div class="img">
+                                    <img src="images/categories/chicken.png" alt="">
+                                </div>
+                                <span class="name">đá gà</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="categories-content tab-content col-9" id="myTabContent">
+                        <div class="tab-pane fade show active" id="game" role="tabpanel" aria-labelledby="game-tab">
+                            <div class="row g-0">
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/1.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Power of Thor
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/2.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Caishen Fortunes
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/3.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Dragon Legend
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/4.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Happy Farm
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/5.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Paraoh
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/6.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Roma
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/7.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Classic 777
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item col-6">
+                                    <a href="">
+                                        <div class="img">
+                                            <img src="images/categories/8.png" alt="">
+                                        </div>
+                                        <div class="name">
+                                            Scum
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <div class="style">
+                <a href="#" class="active">
+                    <img src="images/footer/home-2.png">
+                    <p>Trang chủ</p>
+                </a>
+                <a href="#" class="">
+                    <img src="images/footer/user.png">
+                    <p>CSKH</p>
+                </a>
+                <a href="#" class="">
+                    <img src="images/footer/vip.png">
+                    <p>VIP</p>
+                </a>
+                <a href="#" class="">
+                    <img src="images/footer/gift.png">
+                    <p>Ưu đãi</p>
+                </a>
+                <a href="#" class="">
+                    <img src="images/footer/customer-support%201.png">
+                    <p>TÔI</p>
+                </a>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal-advertisement modal fade" id="adModal" tabindex="-1" aria-labelledby="adModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="swiper popupSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/modal/Rectangle%20432%20(1).png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/modal/Rectangle%20432%20(2).png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/modal/Rectangle%20432%20(3).png">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/modal/Rectangle%20432.png">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="images/close-circle.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit/js/mdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/style.js"></script>
+<script src="inculde.js"></script>
+</html>
