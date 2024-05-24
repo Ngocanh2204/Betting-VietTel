@@ -334,7 +334,7 @@ body {
 }
 .body .categories-content .item a .img {
   width: 100%;
-  height: 18vh;
+  margin-bottom: 5px;
 }
 .body .categories-content .item a .img img {
   width: 100%;
