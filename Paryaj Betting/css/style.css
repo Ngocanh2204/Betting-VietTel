@@ -835,8 +835,19 @@ body {
   overflow-y: auto;
 }
 .bodyNotification .title {
+  display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.098);
   background: white;
+}
+.bodyNotification .title .recharge {
+  white-space: normal;
+  padding: 8px;
+}
+.bodyNotification .title .recharge.active {
+  font-weight: 700;
+  color: rgb(255, 198, 0);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(255, 198, 0);
 }
 .bodyNotification .title button {
   white-space: nowrap;

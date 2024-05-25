@@ -919,8 +919,19 @@ body{
   height: 95vh;
   overflow-y: auto;
   .title{
+    display: flex;
     border-bottom: 1px solid rgba(0, 0, 0, 0.098);
     background: white;
+    .recharge{
+      white-space: normal;
+      padding: 8px;
+      &.active{
+        font-weight: 700;
+        color: rgba(255, 198, 0, 1);
+        text-decoration: none;
+        border-bottom: 2px solid rgba(255, 198, 0, 1);
+      }
+    }
     button{
       white-space: nowrap;
       width: 100%;
@@ -948,9 +959,6 @@ body{
         align-items: center;
         justify-content: center;
       }
-    }
-    .tab-pane{
-
     }
     img{
       width: 100%;
