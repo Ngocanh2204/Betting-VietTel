@@ -139,6 +139,10 @@ body {
   border-radius: 16px;
   color: black;
 }
+.header.headerReward .headerReward-right .loc {
+  font-size: 12px;
+  color: white;
+}
 .header-left {
   position: absolute;
   top: 15%;
@@ -369,18 +373,20 @@ body {
   display: flex;
   text-align: center;
 }
-.body .function-login a, .body .function-signIn a {
+.body .function-login button, .body .function-signIn button {
   height: max-content;
   border-radius: 16px;
   font-size: 12px;
   color: black;
   width: 100%;
 }
-.body .function-login a {
+.body .function-login .login {
+  text-transform: none;
   padding: 5px;
   background: linear-gradient(0deg, #FFCF2C 0%, #FFFFFF 50%, #FFCF2C 100%);
 }
-.body .function-signIn a {
+.body .function-signIn .signIn {
+  text-transform: none;
   padding: 5px 15px;
   background: linear-gradient(0deg, #ED8381 0%, #FFFFFF 50%, #ED8381 100%);
 }
@@ -1017,6 +1023,76 @@ body {
   background: linear-gradient(0deg, #FFA720 0%, #FFDD69 100%);
 }
 
+.bodyRecord {
+  background: rgb(172, 172, 172);
+  min-height: 94vh;
+  overflow-y: auto;
+}
+.bodyRecord .formRecord {
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+  background: white;
+}
+.bodyRecord .formRecord .text {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin: 10px 0;
+}
+.bodyRecord .formRecord .bodyRecord-I {
+  margin-top: 20px;
+}
+.bodyRecord .formRecord .bodyRecord-I .input input {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  color: rgba(0, 0, 0, 0.4);
+}
+.bodyRecord .formRecord .bodyRecord-II {
+  margin-top: 20px;
+}
+.bodyRecord .formRecord .bodyRecord-II .input {
+  gap: 5px;
+  align-items: center;
+  font-size: 12px;
+}
+.bodyRecord .formRecord .bodyRecord-II .input input {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  color: rgba(0, 0, 0, 0.4);
+}
+.bodyRecord .formRecord .footerRecord {
+  margin-top: auto;
+}
+.bodyRecord .formRecord .footerRecord .reset {
+  background: rgba(0, 0, 0, 0.698);
+  font-size: 12px;
+  color: white;
+  border: none;
+  padding: 8px 0;
+}
+.bodyRecord .formRecord .footerRecord .next {
+  background: rgb(255, 234, 164);
+  font-size: 12px;
+  color: black;
+  border: none;
+  padding: 8px 0;
+}
+
+.popupLogin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 430px;
+  margin: 0 auto;
+  background: rgb(70, 70, 70);
+}
 .footer {
   position: fixed;
   bottom: 0;
