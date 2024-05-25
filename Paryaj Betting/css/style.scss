@@ -12,7 +12,50 @@ body{
   background: black;
 }
 
-.Information{
+.home{
+  .modal-dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 92vh;
+    max-width: 300px;
+    margin: auto;
+    .modal-content{
+      background-color: transparent;
+      .modal-body{
+        padding: 0px;
+        .swiper-slide{
+          height: 64vh;
+          width: auto;
+          img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 7px;
+          }
+        }
+        .swiper-pagination{
+          .swiper-pagination-bullet{
+            background: rgba(217, 217, 217, 1);
+          }
+          .swiper-pagination-bullet-active{
+            background: rgba(255, 229, 0, 1);
+          }
+        }
+      }
+      .modal-footer{
+        border-top: none;
+        justify-content: center;
+        button{
+          background: transparent;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.Information, .Reward{
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -32,6 +75,86 @@ body{
         font-size: 16px;
       }
     }
+  }
+  &.headerReward{
+    padding: 10px 16px;
+    background: rgba(68, 64, 64, 0.8);
+    display: flex;
+    justify-content: space-between;
+    .headerReward-left{
+      a{
+        i{
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+    .headerReward-center{
+      font-size: 16px;
+      color: white;
+    }
+    .headerReward-right{
+      .madoi{
+        font-size: 12px;
+        color: black;
+        padding: 8px;
+        border-radius: 16px;
+        font-weight: 500;
+        background: linear-gradient(0deg, #FF9A01 0%, #FFCF2C 100%);
+        box-shadow: none;
+      }
+      .modal-dialog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 92vh;
+        max-width: 343px;
+        margin: auto;
+        .modal-content{
+          border-radius: 16px;
+          .modal-header{
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(180deg, #FFDD69 0%, #FFA720 100%);
+            color: black;
+            border-radius: 16px 16px 0px 0px;
+            padding: 8px;
+            h5{
+              margin: auto;
+            }
+          }
+          .modal-body{
+            padding-bottom: inherit;
+            border: none;
+            input{
+              background: rgba(0, 0, 0, 0.098);
+              padding: 8px;
+              border-radius: 8px;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+          .modal-footer{
+            border: none;
+            display: flex;
+            justify-content: center;
+            button{
+              text-transform: none;
+              display: flex;
+              justify-content: center;
+              width: 80%;
+              background: linear-gradient(0deg, #FFA720 0%, #FFDD69 100%);
+              padding: 8px 16px 8px 16px;
+              border-radius: 16px;
+              color: black;
+            }
+
+          }
+        }
+      }
+    }
+
   }
   &-left{
     position: absolute;
@@ -229,11 +352,12 @@ body{
       }
     }
   }
-  button{
+  .button-icon{
     background: none;
     border: none;
   }
 }
+
 
 
 //BODY
@@ -793,6 +917,7 @@ body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.098);
     background: white;
     button{
+      white-space: nowrap;
       width: 100%;
       font-size: 14px;
       color: black;;
@@ -993,46 +1118,6 @@ body{
   }
 }
 
-.modal-dialog{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 92vh;
-  max-width: 300px;
-  margin: auto;
-  .modal-content{
-    background-color: transparent;
-    .modal-body{
-      padding: 0px;
-      .swiper-slide{
-        height: 64vh;
-        width: auto;
-        img{
-          width: 100%;
-          height: 60vh;
-          object-fit: cover;
-          border-radius: 7px;
-        }
-      }
-      .swiper-pagination{
-        .swiper-pagination-bullet{
-          background: rgba(217, 217, 217, 1);
-        }
-        .swiper-pagination-bullet-active{
-          background: rgba(255, 229, 0, 1);
-        }
-      }
-    }
-    .modal-footer{
-      border-top: none;
-      justify-content: center;
-      button{
-        background: transparent;
-        padding: 0;
-      }
-    }
-  }
-}
 
 
 //FOOTER
