@@ -711,6 +711,80 @@ body {
   color: rgb(255, 198, 0);
 }
 
+.bodyNotification {
+  padding-bottom: 11vh;
+  background: rgba(255, 255, 255, 0.97);
+  height: 95vh;
+  overflow-y: auto;
+}
+.bodyNotification .title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+  background: white;
+}
+.bodyNotification .title button {
+  width: 100%;
+  font-size: 14px;
+  color: black;
+  text-transform: none;
+}
+.bodyNotification .title button.active {
+  color: rgb(255, 198, 0);
+  border: none;
+  text-decoration: underline;
+  background: none;
+}
+.bodyNotification .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyNotification .content .content-hollow.active {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyNotification .content img {
+  width: 100%;
+  height: auto;
+}
+.bodyNotification .content .text {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.bodyNotification .content .notification-item {
+  background: white;
+  padding: 16px;
+  align-items: center;
+}
+.bodyNotification .content .notification-item .notification-left .big {
+  font-size: 12px;
+  font-weight: 700;
+}
+.bodyNotification .content .notification-item .notification-left .small {
+  font-size: 12px;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bodyNotification .content .notification-item .notification-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyNotification .content .notification-item .notification-right .date {
+  font-size: 12px;
+}
+.bodyNotification .content .notification-item .notification-right .time {
+  font-size: 12px;
+}
+
 .modal-dialog {
   display: flex;
   flex-direction: column;
