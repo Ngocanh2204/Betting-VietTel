@@ -784,6 +784,126 @@ body {
 .bodyNotification .content .notification-item .notification-right .time {
   font-size: 12px;
 }
+.bodyNotification .content .method-icon .item {
+  background: white;
+  position: relative;
+  width: 100%;
+  border: 1px solid rgb(255, 198, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.bodyNotification .content .method-icon .item .img-icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+.bodyNotification .content .method-icon .item .top-left {
+  position: absolute;
+  top: -3px;
+  left: -5px;
+}
+.bodyNotification .content .method-icon .item .name {
+  font-size: 12px;
+  font-weight: 500;
+}
+.bodyNotification .content .method-icon .item .top-left-text {
+  position: absolute;
+  top: 3px;
+  left: -5px;
+  transform: rotate(-30deg);
+  font-size: 10px;
+  color: white;
+}
+.bodyNotification .content .method-icon .item .bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bodyNotification .content .method-text {
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 25px;
+  background: white;
+}
+.bodyNotification .content .method-text-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.bodyNotification .content .method-text .checkbox .form-check {
+  font-weight: 500;
+  margin: 10px 0;
+}
+.bodyNotification .content .method-text .checkbox .form-check-input {
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+  border-color: rgb(100, 116, 139);
+}
+.bodyNotification .content .method-text .checkbox .form-check-input:checked {
+  border-color: rgb(255, 198, 0);
+}
+.bodyNotification .content .method-text .checkbox .form-check-input:checked:after {
+  background: rgb(255, 198, 0);
+  color: rgb(255, 198, 0);
+}
+.bodyNotification .content .method-text .checkbox .form-check-input:before {
+  box-shadow: none;
+}
+.bodyNotification .content .method-text .checkbox .form-check-input:after {
+  background: none;
+}
+.bodyNotification .content .method-number {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 25px;
+  background: white;
+}
+.bodyNotification .content .method-number .import-number {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
+.bodyNotification .content .method-number .import-number-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+}
+.bodyNotification .content .method-number .import-number input {
+  border: 1px solid rgb(255, 198, 0);
+  border-radius: 8px;
+  height: 32px;
+}
+.bodyNotification .content .method-number .import-number input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+.bodyNotification .content .method-number .result1 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.bodyNotification .content .method-number .result2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.bodyNotification .content .method-button {
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  padding: 8px;
+  border-radius: 100px;
+  font-size: 16px;
+  background: linear-gradient(0deg, #FFA720 0%, #FFDD69 100%);
+}
 
 .modal-dialog {
   display: flex;
