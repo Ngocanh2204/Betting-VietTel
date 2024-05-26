@@ -1298,6 +1298,30 @@ body {
   display: flex;
   flex-direction: column;
 }
+.bodyPass .link-pass {
+  padding: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+}
+.bodyPass .link-pass-left {
+  font-size: 12px;
+  font-weight: 700;
+}
+.bodyPass .link-pass-right {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.bodyPass .link-pass-right .text {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.698);
+}
+.bodyPass .link-pass-right i {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.698);
+}
 .bodyPass-form {
   display: flex;
   flex-direction: column;
