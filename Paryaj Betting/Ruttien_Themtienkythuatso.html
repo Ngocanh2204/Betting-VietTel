@@ -16,56 +16,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,700&family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@100&family=Nunito+Sans:wght@400;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300&family=Roboto+Slab:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Bản ghi giảm giá</title>
+    <title>Thêm tiền kỹ thuật số</title>
 </head>
 <body class="Information">
 <div class="header header-Information container">
     <div class="header-right d-flex justify-content-between">
         <div class="logo">
-            Bản ghi giảm giá
+            Thêm tiền kỹ thuật số
         </div>
     </div>
     <div class="p-0 header-left d-flex justify-content-center">
-        <a href="hoahongcuatoi.html" class="position">
+        <a href="Ruttien.html" class="position">
             <i class="fa-solid fa-angle-left"></i>
         </a>
     </div>
 </div>
-<div class=" bodyRecord">
-    <form action="" class="container formRecord">
-        <div class="bodyRecord-II">
-            <div class="text">
-                Thời gian hoàn tiền
+<div class="container bodyPass">
+    <form action="" class="bodyPass-form">
+        <div class="form-pass row">
+            <div class="col-3 form-pass-text">
+                Tên<br>
+                tài khoản
             </div>
-            <div class="input d-flex">
-                <input type="text" class="form-control" placeholder="Thời gian bắt đầu" aria-label="Server">
-                <span>đến</span>
-                <input type="text" class="form-control" placeholder="Thời gian kết thúc" aria-label="Server">
-            </div>
-        </div>
-        <div class="bodyRecord-I">
-            <div class="text">
-                Loại giảm giá
-            </div>
-            <div class="input ">
-                <input type="text" class="form-control" placeholder="Vui lòng chọn loại giảm giá" aria-label="Server">
+            <div class="col-9 form-add-account bold">
+                <input placeholder="" value="Nguyễn Văn A">
             </div>
         </div>
-        <div class="bodyRecord-II">
-            <div class="text">
-                Số tiền hoàn lại
+        <div class="form-pass row">
+            <div class="col-3 form-pass-text">
+                Tên<br>
+                ngân hàng
             </div>
-            <div class="input d-flex">
-                <input type="text" class="form-control" placeholder="Số tiền tối thiểu" aria-label="Server">
-                <span>đến</span>
-                <input type="text" class="form-control" placeholder="Số tiền tối đa" aria-label="Server">
+            <div class="col-9 form-add-account bold">
+                <input placeholder="" value="Đảm bảo">
             </div>
         </div>
-        <div class="footerRecord row">
-            <button class="reset col-6">Cài lại</button>
-            <button class="next col-6">Đảm bảo</button>
+        <div class="form-pass row">
+            <div class="col-3 form-pass-text">
+                Tên<br>
+                ngân hàng
+            </div>
+            <div class="col-9 form-add-account">
+                <input placeholder="" value="Vui lòng nhập số tài khoản">
+            </div>
+        </div>
+        <div class="form-pass margin row">
+            <div class="col-3 form-pass-text">
+                Chi<br>
+                nhánh
+            </div>
+            <div class="col-9 form-add-account">
+                <input value="Vui lòng nhập tên chi nhánh" placeholder="">
+            </div>
+        </div>
+        <button type="button" class="button-check" data-bs-toggle="modal" data-bs-target="#suggestModal">
+            Xác nhận gửi
+        </button>
+        <!-- Modal -->
+        <div class="modal fade suggestModal" id="suggestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog suggestModal-dialog">
+                <div class="modal-content suggestModal-dialog-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gợi ý</h5>
+                    </div>
+                    <div class="modal-body">
+                        Vui lòng đặt mật khẩu rút tiền trước, sau đó thêm thẻ ngân hàng
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đảm bảo</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
+
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

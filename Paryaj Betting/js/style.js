@@ -9,6 +9,17 @@ function closeMenu() {
 }
 
 
+
+// OPEN - CLOSE METHOD
+function openMethod() {
+    document.getElementById("list-method").classList.add('active');
+    document.getElementsByClassName("close-method")[0].classList.add('active');
+}
+function closeMethod() {
+    document.getElementById("list-method").classList.remove('active');
+    document.getElementsByClassName("close-method")[0].classList.remove('active');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var myModal = new bootstrap.Modal(document.getElementById('adModal'));
     myModal.show();
