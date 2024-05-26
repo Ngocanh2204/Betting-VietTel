@@ -7,12 +7,10 @@ body{
   position: relative;
   font-family: Montserrat;
 }
-
 .background{
   background: black;
   position: relative;
 }
-
 .home{
   .modal-dialog{
     display: flex;
@@ -55,11 +53,11 @@ body{
     }
   }
 }
-
 .Information, .Reward{
   position: relative;
   background: rgba(0, 0, 0, 0.8);
 }
+
 
 //HEADER
 .header{
@@ -1438,7 +1436,7 @@ body{
     background: white;
     padding: 15px;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.098);
     &-left{
       font-size: 12px;
       font-weight: 700;
@@ -1723,6 +1721,78 @@ body{
         margin: 35px 0 15px 0;
         padding: 5px 8px;
       }
+    }
+  }
+}
+.bodyPromotion{
+  background: rgba(255, 255, 255, 0.97);
+  min-height: 95vh;
+  overflow-y: auto;
+  .item{
+    margin-top: 15px;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    &-top{
+      padding: 10px 0;
+      display: flex;
+      gap: 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.098);
+      &-left{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        img{
+          margin: 8px;
+          width: 24px;
+          height: 24px;
+        }
+        &.bai{
+          background: linear-gradient(0deg, #FFA720 0%, #FFDD69 100%);
+        }
+        &.big{
+          background: linear-gradient(0deg, #FF4820 0%, #ED8381 100%);
+        }
+        &.fish{
+          background: linear-gradient(0deg, #01BEC8 0%, #10C49D 100%);
+        }
+        &.ace{
+          background: linear-gradient(0deg, #12B347 0%, #99FBA9 100%);
+        }
+        &.sale{
+          background: linear-gradient(0deg, #FFC600 0%, #FFEAA4 100%);
+        }
+        &.moneys{
+          background: linear-gradient(0deg, #CB1515 0%, #ED8381 100%);
+        }
+      }
+      &-right{
+        .name{
+          width: 90%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 16px;
+          font-weight: 500;
+          color: black;
+        }
+        .content{
+          font-size: 12px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+    &-bottom{
+      padding: 10px 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
     }
   }
 }
