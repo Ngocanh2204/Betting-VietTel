@@ -1414,6 +1414,16 @@ body{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  .icon-footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+    img{
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+    }
+  }
   .logout{
     display: flex;
     margin: 30px auto;

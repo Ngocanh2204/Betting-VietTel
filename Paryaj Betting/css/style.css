@@ -1310,6 +1310,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.bodyPass .icon-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: right;
+}
+.bodyPass .icon-footer img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
 .bodyPass .logout {
   display: flex;
   margin: 30px auto;
