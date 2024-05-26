@@ -913,6 +913,94 @@ body{
     }
   }
 }
+.bodyAddfriend{
+  background: rgba(255, 255, 255, 0.97);
+  height: 94vh;
+  overflow-y: auto;
+  .sale{
+    gap: 60px;
+    background: white;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 198, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &--icon{
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+      &--text{
+        font-size: 12px;
+        &--top{
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+        }
+        &--bottom{
+          font-weight: 400;
+        }
+      }
+    }
+    &-right{
+      button{
+        border: none;
+        font-size: 12px;
+        color: white;
+        background: rgba(237, 131, 129, 1);
+        border-radius: 16px;
+        padding: 4px 8px;
+      }
+      a{
+        i{
+          width: 24px;
+          height: 24px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+  .member{
+    border: none;
+  }
+  .linkQR{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &-title{
+      font-size: 24px;
+      font-weight: 700;
+      color: rgba(210, 0, 0, 1);
+    }
+    &-title-small{
+      font-size: 12px;
+      font-weight: 600;
+      color: black;
+    }
+    img{
+      width: 163px;
+      height: 163px;
+      object-fit: cover;
+    }
+  }
+  .footerAddfriend{
+    margin-top: 40px;
+    button{
+      padding: 8px;
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.098);
+      font-size: 16px;
+    }
+  }
+}
 .bodyNotification{
   padding-bottom: 11vh;
   background: rgba(255, 255, 255, 0.97);
