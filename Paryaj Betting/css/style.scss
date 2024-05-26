@@ -78,6 +78,22 @@ body{
       }
     }
   }
+  &.header-Setting{
+    background: white;
+    .header-left{
+      i{
+        color: black;
+        font-size: 16px;
+      }
+    }
+    .header-right{
+      .logo{
+        color: black;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
   &.headerReward{
     padding: 10px 16px;
     background: rgba(68, 64, 64, 0.8);
@@ -1398,7 +1414,18 @@ body{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  .logout{
+    display: flex;
+    margin: 30px auto;
+    color: black;
+    font-size: 16px;
+    background: rgba(237, 131, 129, 1);
+    border-radius: 100px;
+    padding: 5px 15px;
+    border: none;
+  }
   .link-pass{
+    background: white;
     padding: 15px;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.098);

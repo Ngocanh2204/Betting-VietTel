@@ -70,6 +70,18 @@ body {
 .header.header-Information .header-right .logo {
   font-size: 16px;
 }
+.header.header-Setting {
+  background: white;
+}
+.header.header-Setting .header-left i {
+  color: black;
+  font-size: 16px;
+}
+.header.header-Setting .header-right .logo {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
 .header.headerReward {
   padding: 10px 16px;
   background: rgba(68, 64, 64, 0.8);
@@ -1298,7 +1310,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+.bodyPass .logout {
+  display: flex;
+  margin: 30px auto;
+  color: black;
+  font-size: 16px;
+  background: rgb(237, 131, 129);
+  border-radius: 100px;
+  padding: 5px 15px;
+  border: none;
+}
 .bodyPass .link-pass {
+  background: white;
   padding: 15px;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.098);
