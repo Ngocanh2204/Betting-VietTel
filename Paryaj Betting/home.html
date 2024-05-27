@@ -23,7 +23,7 @@
         <div class="header container">
             <div class="header-right d-flex justify-content-between">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="home.html">
                         <img src="images/logo.png" alt="">
                     </a>
                 </div>
@@ -60,12 +60,12 @@
             <section class="container">
                 <div class="function row">
                     <div class="function-login col-3">
-                        <button type="button" class="login btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="login" onclick="openSignIn()">
                             Đăng nhập
                         </button>
                     </div>
                     <div class="function-signIn col-3">
-                        <button type="button" class="signIn btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="signIn" onclick="openSignIn()">
                             Đăng ký
                         </button>
                     </div>
@@ -107,6 +107,119 @@
                     </div>
                 </div>
             </section>
+            <div class="popup-LogIn" id="popup-LogIn">
+                <div class="position">
+                    <div class="background-top">
+                        <img src="images/Ellipse%2084.png" alt="">
+                    </div>
+                    <div class="content container">
+                        <div class="close">
+                            <i onclick="closeLogIn()" class="close_signIn fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+                            <li class="nav-item col-6" role="presentation">
+                                <button class="nav-link active" id="pills-logIn-tab" data-bs-toggle="pill" data-bs-target="#pills-logIn" type="button" role="tab" aria-controls="pills-logIn" aria-selected="true">Đăng nhập thành viên</button>
+                            </li>
+                            <li class="nav-item col-6" role="presentation">
+                                <button class="nav-link" id="pills-SignIn-tab" data-bs-toggle="pill" data-bs-target="#pills-SignIn" type="button" role="tab" aria-controls="pills-SignIn" aria-selected="false">Đăng ký tài khoản</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-content-shared login tab-pane fade show active" id="pills-logIn" role="tabpanel" aria-labelledby="pills-logIn-tab">
+                                <form action="" class="formLogin">
+                                    <div class="group">
+                                        <input class="input" placeholder="Vui lòng nhập tên người dùng">
+                                        <div class="star">
+                                            <img src="images/icon/user.png">
+                                        </div>
+                                    </div>
+                                    <div class="group">
+                                        <input class="input" placeholder="Nhập mật khẩu">
+                                        <div class="star">
+                                            <img src="images/icon/lock.png">
+                                        </div>
+                                        <div class="eye">
+                                            <img src="images/icon/eye-slash.png">
+                                        </div>
+                                    </div>
+                                    <div class="group d-flex">
+                                        <input class="input" placeholder="Vui lòng nhập mã giới thiệu (ko bắt buộc)">
+                                        <div class="star">
+                                            <img src="images/icon/security.png">
+                                        </div>
+                                        <img src="images/image%205.png" alt="">
+                                    </div>
+                                    <a href="" class="forgetPass">
+                                        Quên mật khẩu của bạn ?
+                                    </a>
+                                    <button class="buttonSuccess">Đăng nhập</button>
+                                </form>
+                            </div>
+                            <div class="tab-content-shared signIn tab-pane fade" id="pills-SignIn" role="tabpanel" aria-labelledby="pills-SignIn-tab">
+                                <form action="" class="formLogin">
+                                    <input class="input" placeholder="Vui lòng nhập mã giới thiệu (ko bắt buộc)">
+                                    <div class="group">
+                                        <input class="input" placeholder="Tên tài khoản phải bao gồm 4-10 cả chữ">
+                                        <div class="star">
+                                            <img src="images/icon/star.png">
+                                        </div>
+                                    </div>
+                                    <div class="group">
+                                        <input class="input" placeholder="Tên tài khoản phải bao gồm 4-10 cả chữ">
+                                        <div class="star">
+                                            <img src="images/icon/star.png">
+                                        </div>
+                                        <div class="eye">
+                                            <img src="images/icon/eye-slash.png">
+                                        </div>
+                                    </div>
+                                    <div class="group">
+                                        <input class="input" placeholder="Xác nhận mật khẩu">
+                                        <div class="star">
+                                            <img src="images/icon/star.png">
+                                        </div>
+                                        <div class="eye">
+                                            <img src="images/icon/eye-slash.png">
+                                        </div>
+                                    </div>
+                                    <div class="group">
+                                        <input class="input" placeholder="SĐT: Không nhập số 0 ở đầu">
+                                        <div class="star">
+                                            <img src="images/icon/star.png">
+                                        </div>
+                                    </div>
+                                    <div class="group group-phone">
+                                        <input class="input" placeholder="Vui lòng nhập họ tên">
+                                        <div class="star d-flex">
+                                            <img src="images/icon/star.png">
+                                            <div class="number">84
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group d-flex">
+                                        <input class="input" placeholder="Nhập mã xác minh">
+                                        <div class="star">
+                                            <img src="images/icon/star.png">
+                                        </div>
+                                        <img src="images/image%205.png" alt="">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Sự thỏa thuận của người dùng Sự thỏa
+                                            thuận của người dùng
+                                        </label>
+                                    </div>
+                                    <button class="buttonSuccess">Đăng ký</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
             <section class="suggest container">
                 <div class="suggest-name">
                     <a class="hot" href="">hot</a>
@@ -314,7 +427,7 @@
         </div>
         <div class="footer">
             <div class="style">
-                <a href="index.html" class="active">
+                <a href="home.html" class="active">
                     <img src="images/footer/home-2.png">
                     <p>Trang chủ</p>
                 </a>
@@ -334,24 +447,6 @@
                     <img src="images/footer/customer-support%201.png">
                     <p>TÔI</p>
                 </a>
-            </div>
-        </div>
-        <!-- Modal Login/SignIn-->
-        <div class="modal fade popupLogin" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog ">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -386,6 +481,55 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Notification -->
+
+        <div class="modal-advertisement Notification modal fade" id="Notification" tabindex="-1" aria-labelledby="adModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="img-left">
+                            <img src="images/Subtract.png">
+                        </div>
+                        <div class="img-right">
+                            <img src="images/mailpost-01%201.png" alt="">
+                        </div>
+                        <div class="img-bottom">
+                            <img src="images/Intersect.png" alt="">
+                        </div>
+                        <div class="text">Thông báo</div>
+                        <div class="swiper notificationSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="title">
+                                        Trở thành đại lý Paryajnatcom
+                                    </div>
+                                    <div class="content">
+                                        Trở thành đại lý - Kiếm tiền dễ dàng.
+                                        Paryajnatcom mời bạn đăng ký làm đại lý, giới thiệu bạn bè chơi cùng và nhận ngay phần thưởng tiền mặt lên tới 50.000.000 VNĐ!
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="title">
+                                        Hội viên VIP
+                                    </div>
+                                    <div class="content">
+                                        Trở thành hội viên VIP và nhận thưởng hàng tuần/ thưởng hàng tháng. Số tiền cao nhất có thể lên tới 80 triệu đồng. Hãy nhanh tay mời bạn bè của mình tham gia cùng chúng tôi nhé!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="images/close-circle.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

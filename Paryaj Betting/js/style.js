@@ -20,12 +20,41 @@ function closeMethod() {
     document.getElementsByClassName("close-method")[0].classList.remove('active');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var myModal = new bootstrap.Modal(document.getElementById('adModal'));
-    myModal.show();
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     var myModal = new bootstrap.Modal(document.getElementById('adModal'));
+//     myModal.show();
+// });
+//
+// document.addEventListener('DOMContentLoaded', function() {
+//     var myModal = new bootstrap.Modal(document.getElementById('Notification'));
+//     myModal.show();
+// });
+
+
+
+
+// OPEN - CLOSE SIGNIN
+function openSignIn() {
+    document.getElementById("popup-LogIn").classList.add('active');
+    document.getElementsByClassName("close_signIn")[0].classList.add('active');
+}
+function closeLogIn() {
+    document.getElementById("popup-LogIn").classList.remove('active');
+    document.getElementsByClassName("close_signIn")[0].classList.remove('active');
+}
+
+
 
 new Swiper(".popupSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+new Swiper(".notificationSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
