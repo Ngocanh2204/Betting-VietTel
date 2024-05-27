@@ -63,6 +63,20 @@ new Swiper(".notificationSwiper", {
     },
 });
 
+
+new Swiper(".swiperBanner", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     var paragraphs = document.querySelectorAll(".textDown");
 

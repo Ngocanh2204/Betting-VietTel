@@ -485,9 +485,17 @@ body{
   .banner{
     width: 100%;
     height: 14vh;
-    img{
-      width: 100%;
-      height: 100%;
+    .swiper{
+      height: inherit;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      &-pagination{
+        &-bullet{
+          background: rgba(255, 198, 0, 1);
+        }
+      }
     }
   }
 
