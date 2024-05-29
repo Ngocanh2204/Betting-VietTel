@@ -20,6 +20,8 @@ function closeMethod() {
     document.getElementsByClassName("close-method")[0].classList.remove('active');
 }
 
+
+//
 // document.addEventListener('DOMContentLoaded', function() {
 //     var myModal = new bootstrap.Modal(document.getElementById('adModal'));
 //     myModal.show();
@@ -41,6 +43,18 @@ function openSignIn() {
 function closeLogIn() {
     document.getElementById("popup-LogIn").classList.remove('active');
     document.getElementsByClassName("close_signIn")[0].classList.remove('active');
+}
+
+
+
+// OPEN - CLOSE Transfer
+function openTransfer() {
+    document.getElementById("popup-Transfer").classList.add('active');
+    document.getElementsByClassName("close_Transfer")[0].classList.add('active');
+}
+function closeTransfer() {
+    document.getElementById("popup-Transfer").classList.remove('active');
+    document.getElementsByClassName("close_Transfer")[0].classList.remove('active');
 }
 
 

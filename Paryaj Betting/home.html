@@ -84,31 +84,31 @@
                     </div>
                     <div class="function-recharge col-2">
                         <div class="recharge">
-                            <a href="naptien.html">
+                            <button type="button" class="icon-css" data-bs-toggle="modal" data-bs-target="#exampleTransfer">
                                 <div class="img">
                                     <img src="images/icon/recharge.png" alt="">
                                 </div>
                                 <div class="content">
                                     Nạp tiền
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="function-withdrawMoney col-2">
                         <div class="recharge">
-                            <a href="Ruttien.html">
+                            <button type="button" class="icon-css" data-bs-toggle="modal" data-bs-target="#exampleDeposit">
                                 <div class="img">
                                     <img src="images/icon/withdrawMoney.png" alt="">
                                 </div>
                                 <div class="content">
                                     Rút tiền
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="function-reward col-2">
                         <div class="recharge">
-                            <a href="thuong.html">
+                            <a class="icon-css" href="thuong.html">
                                 <div class="img">
                                     <img src="images/icon/reward.png" alt="">
                                 </div>
@@ -120,8 +120,10 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Popup Login-->
             <div class="popup-LogIn" id="popup-LogIn">
-                <div class="position">
+                <div class="position" >
                     <div class="background-top">
                         <img src="images/Ellipse%2084.png" alt="">
                     </div>
@@ -232,7 +234,251 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Popup Deposit-->
+            <div class="modal fade modal-Transfer" id="exampleTransfer" tabindex="-1" aria-labelledby="exampleTransferLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-pills mb-3 row g-0" id="pills-tab1" role="tablist">
+                                <li class="nav-item col-6" role="presentation">
+                                    <button class="nav-link active" id="pills-Transfer-tab" data-bs-toggle="pill" data-bs-target="#pills-Transfer" type="button" role="tab" aria-controls="pills-Transfer" aria-selected="true">To Game Wallet</button>
+                                </li>
+                                <li class="nav-item col-6" role="presentation">
+                                    <button class="nav-link" id="pills-Transfer2-tab" data-bs-toggle="pill" data-bs-target="#pills-Transfer2" type="button" role="tab" aria-controls="pills-Transfer2" aria-selected="false">To Main Wallet</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent1">
+                                <div class="tab-content-shared login tab-pane fade show active" id="pills-Transfer" role="tabpanel" aria-labelledby="pills-Transfer-tab">
+                                    <form action="" class="">
+                                        <div class="formLogin">
+                                            <div class="list-bottom">
+                                                <div class="item">
+                                                    <div class="text">
+                                                        Main Wallet
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                    <div class="icon">
+                                                        <img src="images/img_sao.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="text">
+                                                        Sports
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="text">
+                                                        games
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title-select">
+                                                Game Wallet
+                                            </div>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value="1">Please Choose</option>
+                                                <option value="2">Sports</option>
+                                                <option value="3">Game</option>
+                                            </select>
+                                            <div class="title">
+                                                COIN
+                                            </div>
+                                            <input class="input input_text" placeholder="Coin" value="">
+                                            <div class="title">
+                                                Password
+                                            </div>
+                                            <input type="password" class="input_text" placeholder="Password" value="">
+                                            <button class="buttonSuccess">Confirm</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-content-shared signIn tab-pane fade" id="pills-Transfer2" role="tabpanel" aria-labelledby="pills-Transfer2-tab">
+                                    <form action="" class="">
+                                        <div class="formLogin">
+                                            <div class="list-bottom">
+                                                <div class="item">
+                                                    <div class="text">
+                                                        Main Wallet
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                    <div class="icon">
+                                                        <img src="images/img_sao.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="text">
+                                                        Sports
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="text">
+                                                        games
+                                                    </div>
+                                                    <div class="number">
+                                                        0
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="title-select">
+                                                Game Wallet
+                                            </div>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value="1">Please Choose</option>
+                                                <option value="2">Sports</option>
+                                                <option value="3">Game</option>
+                                            </select>
+                                            <div class="title">
+                                                COIN
+                                            </div>
+                                            <input class="input input_text" placeholder="Coin" value="">
+                                            <div class="title">
+                                                Password
+                                            </div>
+                                            <input type="password" class="input_text" placeholder="Password" value="">
+                                            <button class="buttonSuccess">Confirm</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Popup Transfer-->
+            <div class="modal fade modal-Transfer" id="exampleDeposit" tabindex="-1" aria-labelledby="exampleTransferLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-pills mb-3 d-flex" id="pills-tabContent2" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-Deposit-tab" data-bs-toggle="pill" data-bs-target="#pills-Deposit" type="button" role="tab" aria-controls="pills-Deposit" aria-selected="true">Mobile</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Deposit2-tab" data-bs-toggle="pill" data-bs-target="#pills-Deposit2" type="button" role="tab" aria-controls="pills-Deposit2" aria-selected="false">Natcash</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="">
+                                <div class="tab-content-shared login tab-pane fade show active" id="pills-Deposit" role="tabpanel" aria-labelledby="pills-Deposit-tab">
+                                    <form action="" class="">
+                                        <div class="formLogin">
+                                            <div class="title-select">
+                                                AMOUNT:
+                                            </div>
+                                            <input type="password" class="input_text" value="" placeholder="Min 5 HTG">
+                                            <button class="successDeposit">Confirm</button>
+                                        </div>
+                                    </form>
+                                    <div class="remember">
+                                           <b>Instruct:</b> <br>
+                                            - Enter the amount you want to withdrawal <br>
+                                            - Click the confirmation button to receive confirmation OTP <br>
+                                            - Enter the OTP you received and click confirm transaction <br>
+                                            <b>Note:</b> Players can only withdraw money when the total transaction is equal  to 80% of the amount of most recent deposits
+                                    </div>
+                                    <div class="tableHistory">
+                                        <div class="title">
+                                            History desi
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-content-shared signIn tab-pane fade" id="pills-Deposit2" role="tabpanel" aria-labelledby="pills-Deposit2-tab">
+                                    <form action="" class="">
+                                        <div class="formLogin">
+                                            <div class="title-select">
+                                                AMOUNT:
+                                            </div>
+                                            <input type="password" class="input_text" value="" placeholder="Min 5 HTG">
+                                            <button class="successDeposit">Confirm</button>
+                                        </div>
+                                    </form>
+                                    <div class="remember">
+                                        <b>Instruct:</b> <br>
+                                        - Enter the amount you want to withdrawal <br>
+                                        - Click the confirmation button to receive confirmation OTP <br>
+                                        - Enter the OTP you received and click confirm transaction <br>
+                                        <b>Note:</b> Players can only withdraw money when the total transaction is equal  to 80% of the amount of most recent deposits
+                                    </div>
+                                    <div class="tableHistory">
+                                        <div class="title">
+                                            History desi
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Status</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <section class="suggest container">
                 <div class="suggest-name">
                     <a class="hot" href="">hot</a>
@@ -291,7 +537,7 @@
                     <ul class="categories-name nav nav-tabs col-3" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab" aria-controls="game" aria-selected="true">
-                                <div class="img">
+                                <div class="img img-color">
                                     <img src="images/categories/game.png" alt="">
                                 </div>
                                 <span class="name">trò chơi</span>
