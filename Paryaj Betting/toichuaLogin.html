@@ -33,18 +33,138 @@
                 </div>
             </div>
             <div class="header-bottom-login">
-                <a href="">Đăng nhập</a>
+                <button type="button" class="login" onclick="openSignIn()">
+                    Đăng nhập
+                </button>
             </div>
             <div class="header-bottom-signIn">
-                <a href="">Đăng ký</a>
+                <button type="button" class="signIn" onclick="openSignIn()">
+                    Đăng ký
+                </button>
             </div>
         </div>
     </div>
+
+    <!-- Popup Login-->
+    <div class="popup-LogIn" id="popup-LogIn">
+        <div class="position" >
+            <div class="background-top">
+                <img src="images/Ellipse%2084.png" alt="">
+            </div>
+            <div class="content container">
+                <div class="close">
+                    <i onclick="closeLogIn()" class="close_signIn fa-solid fa-xmark"></i>
+                </div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+                    <li class="nav-item col-6" role="presentation">
+                        <button class="nav-link active" id="pills-logIn-tab" data-bs-toggle="pill" data-bs-target="#pills-logIn" type="button" role="tab" aria-controls="pills-logIn" aria-selected="true">Đăng nhập thành viên</button>
+                    </li>
+                    <li class="nav-item col-6" role="presentation">
+                        <button class="nav-link" id="pills-SignIn-tab" data-bs-toggle="pill" data-bs-target="#pills-SignIn" type="button" role="tab" aria-controls="pills-SignIn" aria-selected="false">Đăng ký tài khoản</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-content-shared login tab-pane fade show active" id="pills-logIn" role="tabpanel" aria-labelledby="pills-logIn-tab">
+                        <form action="" class="formLogin">
+                            <div class="group">
+                                <input class="input" placeholder="Vui lòng nhập tên người dùng">
+                                <div class="star">
+                                    <img src="images/icon/user.png">
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input class="input" placeholder="Nhập mật khẩu">
+                                <div class="star">
+                                    <img src="images/icon/lock.png">
+                                </div>
+                                <div class="eye">
+                                    <img src="images/icon/eye-slash.png">
+                                </div>
+                            </div>
+                            <div class="group d-flex">
+                                <input class="input" placeholder="Vui lòng nhập mã giới thiệu (ko bắt buộc)">
+                                <div class="star">
+                                    <img src="images/icon/security.png">
+                                </div>
+                                <img src="images/image%205.png" alt="">
+                            </div>
+                            <a href="" class="forgetPass">
+                                Quên mật khẩu của bạn ?
+                            </a>
+                            <button class="buttonSuccess">Đăng nhập</button>
+                        </form>
+                    </div>
+                    <div class="tab-content-shared signIn tab-pane fade" id="pills-SignIn" role="tabpanel" aria-labelledby="pills-SignIn-tab">
+                        <form action="" class="formLogin">
+                            <input class="input" placeholder="Vui lòng nhập mã giới thiệu (ko bắt buộc)">
+                            <div class="group">
+                                <input class="input" placeholder="Tên tài khoản phải bao gồm 4-10 cả chữ">
+                                <div class="star">
+                                    <img src="images/icon/star.png">
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input class="input" placeholder="Tên tài khoản phải bao gồm 4-10 cả chữ">
+                                <div class="star">
+                                    <img src="images/icon/star.png">
+                                </div>
+                                <div class="eye">
+                                    <img src="images/icon/eye-slash.png">
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input class="input" placeholder="Xác nhận mật khẩu">
+                                <div class="star">
+                                    <img src="images/icon/star.png">
+                                </div>
+                                <div class="eye">
+                                    <img src="images/icon/eye-slash.png">
+                                </div>
+                            </div>
+                            <div class="group">
+                                <input class="input" placeholder="SĐT: Không nhập số 0 ở đầu">
+                                <div class="star">
+                                    <img src="images/icon/star.png">
+                                </div>
+                            </div>
+                            <div class="group group-phone">
+                                <input class="input" placeholder="Vui lòng nhập họ tên">
+                                <div class="star d-flex">
+                                    <img src="images/icon/star.png">
+                                    <div class="number">84
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group d-flex">
+                                <input class="input" placeholder="Nhập mã xác minh">
+                                <div class="star">
+                                    <img src="images/icon/star.png">
+                                </div>
+                                <img src="images/image%205.png" alt="">
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Sự thỏa thuận của người dùng Sự thỏa
+                                    thuận của người dùng
+                                </label>
+                            </div>
+                            <button class="buttonSuccess">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container body">
         <section class="function function-user row">
             <div class="function-recharge col-3">
                 <div class="recharge">
-                    <a href="naptien.html">
+                    <a class="icon-css" href="naptien.html">
                         <div class="img">
                             <img src="images/icon/recharge.png" alt="">
                         </div>
@@ -56,7 +176,7 @@
             </div>
             <div class="function-withdrawMoney col-3">
                 <div class="recharge">
-                    <a href="">
+                    <a class="icon-css" href="">
                         <div class="img">
                             <img src="images/icon/withdrawMoney.png" alt="">
                         </div>
@@ -68,7 +188,7 @@
             </div>
             <div class="function-reward col-3">
                 <div class="recharge">
-                    <a href="thuong.html">
+                    <a class="icon-css" href="thuong.html">
                         <div class="img">
                             <img src="images/icon/reward.png" alt="">
                         </div>
@@ -80,7 +200,7 @@
             </div>
             <div class="function-addFriend col-3">
                 <div class="recharge">
-                    <a href="Moibanbe.html">
+                    <a class="icon-css" href="Moibanbe.html">
                         <div class="img">
                             <img src="images/icon/user-add.png" alt="">
                         </div>
