@@ -777,9 +777,8 @@ body {
   color: white;
 }
 .body .categories-name {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  max-height: 75vh;
+  overflow-x: auto;
 }
 .body .categories-name .nav-item .nav-link {
   width: 100%;
@@ -818,6 +817,26 @@ body {
 .body .categories-name .nav-item .nav-link .name {
   white-space: nowrap;
   color: rgb(255, 234, 164);
+}
+.body .categories-name .overflow {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 97%;
+}
+.body .categories-name::-webkit-scrollbar {
+  width: 2px;
+}
+.body .categories-name::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.body .categories-name::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.body .categories-name::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .body .categories-content .item {
   padding: 10px;
